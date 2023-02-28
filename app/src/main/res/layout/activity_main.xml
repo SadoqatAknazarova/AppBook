@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    android:orientation="vertical">
+
+<LinearLayout
+    android:background="@color/purple_500"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="70dp">
+
+
+    <EditText
+        android:background="@drawable/searchbg"
+        android:layout_height="45dp"
+        android:layout_marginHorizontal="8dp"
+        android:layout_width="350dp"
+
+        android:layout_marginVertical="10dp"
+        android:id="@+id/search"
+        android:hint="Search"
+
+        android:paddingLeft="10dp"
+        android:drawableEnd="@drawable/search"
+        android:paddingRight="10dp"
+        android:inputType="textPersonName"
+        android:ems="10"/>
+
+
+    <ImageView
+        android:id="@+id/iconFav"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="end"
+   android:layout_marginRight="12dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/ic_baseline_bookmark_24" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
